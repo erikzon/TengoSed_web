@@ -6,26 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bar Tengo Sed</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
         <header>
             <nav>
-                <h1>
-                    <img src="assets/logo.webp" width="30%" alt="tengo sed sport bar">
-                </h1>
+                <img src="assets/logo.webp" alt="tengo sed sport bar" id="logo">
                 <ul>
-                    <li><a href="#">Visita la web de Codigo 502</a></li>
-                    <li><a href="#">Menú</a></li>
-                    <li><a href="#" class="btn btn-cta">Visítanos</a></li>
+                    <li>
+                        <a rel="noopener noreferrer" href="https://codigo502.web.app/" target="_blank">
+                            Visita la web de Codigo 502
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#menu">
+                            Menú
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#visitanos" class="btn btn-cta">
+                            Visítanos
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
         <main class="main-screen">
             <section class="row">
-                <div class="col-30 m-9">
+                <div class="col-4 m-9">
                     <h3>El mejor combo</h3>
                     <h2 class="py-4">Ceviche y Gallo.</h2>
                     <p class="">
@@ -49,12 +60,43 @@
                     </div>
                 </div>
 
-                <div class="col-70">
-                    <img src="assets/foodlanding.webp" width="90%" alt="">
-                    <img src="assets/gallo.webp" width="10%" alt="" style="position:absolute; z-index:0">
+                <div class="col-6">
+                    <img src="assets/foodlanding.webp" alt="oferta Ceviche" class="foodlanding">
+                    <img src="assets/gallo.webp" alt="" class="botella">
+                </div>
+            </section>
+            <section id="visitanos">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.8710499700674!2d-90.4215452493966!3d14.663258489712414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858997ddba8fb3dd%3A0x26cfc6e1c5a618b5!2sTengo%20Sed%20Sportbar!5e0!3m2!1ses!2sgt!4v1640738669152!5m2!1ses!2sgt"
+                    allowfullscreen="" loading="lazy"></iframe>
+                <div class="textoVistanos">
+                    <h3>Ubícanos y visítanos</h3>
+                    <h2 class="py-4">KM 12.5 Carretera al Atlantico, Zona 25.</h2>
+                    <h2>
+                        Nuestro Horario es de Lunes a Domingo de 11 a.m. a 11 p.m.
+                    </h2>
+                </div>
+            </section>
+            <section id="menu">
+                <h3>Conoce nuestro delicioso menu</h3>
+                <div class="menugrid">
+                    <img src="assets/food1.webp" alt="oferta Ceviche" class="foodlanding">
+                    <img src="assets/food2.webp" alt="oferta Ceviche" class="foodlanding">
+                    <img src="assets/food3.webp" alt="oferta Ceviche" class="foodlanding">
+                    <img src="assets/food4.webp" alt="oferta Ceviche" class="foodlanding">
+                    <img src="assets/food5.webp" alt="oferta Ceviche" class="foodlanding">
+                    <img src="assets/food6.webp" alt="oferta Ceviche" class="foodlanding">
+                    <img src="assets/food7.webp" alt="oferta Ceviche" class="foodlanding">
+                    <img src="assets/food8.webp" alt="oferta Ceviche" class="foodlanding">
+                    <img src="assets/food9.webp" alt="oferta Ceviche" class="foodlanding">
+                    <img src="assets/food10.webp" alt="oferta Ceviche" class="foodlanding">
+                    <img src="assets/food11.webp" alt="oferta Ceviche" class="foodlanding">
                 </div>
             </section>
         </main>
+        <footer>
+            CONTACTANOS
+        </footer>
     </div>
 </body>
 
