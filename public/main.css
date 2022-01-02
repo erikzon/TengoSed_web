@@ -1,8 +1,8 @@
 .btn.btn-cta {
   background-color: #ffe92e;
   color: black;
-  border-radius: 50px;
-  padding: 20px 30px;
+  border-radius: 2rem;
+  padding: 1.2rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -11,8 +11,8 @@
 .btn.btn-cta:hover {
   background-color: black;
   color: white;
-  border-radius: 50px;
-  padding: 20px 30px;
+  border-radius: 2rem;
+  padding: 1.2rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -22,8 +22,8 @@
 .btn:hover {
   background-color: white;
   color: black;
-  border-radius: 50px;
-  padding: 20px 30px;
+  border-radius: 2rem;
+  padding: 1.2rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -42,111 +42,111 @@
 }
 
 .m-1 {
-  margin: 8px;
+  margin: 0.7rem;
 }
 
 .m-2 {
-  margin: 16px;
+  margin: 1.4rem;
 }
 
 .m-3 {
-  margin: 24px;
+  margin: 2.1rem;
 }
 
 .m-4 {
-  margin: 32px;
+  margin: 2.8rem;
 }
 
 .m-5 {
-  margin: 40px;
+  margin: 3.5rem;
 }
 
 .m-6 {
-  margin: 48px;
+  margin: 4.2rem;
 }
 
 .m-7 {
-  margin: 56px;
+  margin: 4.9rem;
 }
 
 .m-8 {
-  margin: 64px;
+  margin: 5.6rem;
 }
 
 .m-9 {
-  margin: 72px;
+  margin: 6.3rem;
 }
 
 .py-1 {
-  padding: 8px 0;
+  padding: 0.7rem 0;
 }
 
 .py-2 {
-  padding: 16px 0;
+  padding: 1.4rem 0;
 }
 
 .py-3 {
-  padding: 24px 0;
+  padding: 2.1rem 0;
 }
 
 .py-4 {
-  padding: 32px 0;
+  padding: 2.8rem 0;
 }
 
 .py-5 {
-  padding: 40px 0;
+  padding: 3.5rem 0;
 }
 
 .py-6 {
-  padding: 48px 0;
+  padding: 4.2rem 0;
 }
 
 .py-7 {
-  padding: 56px 0;
+  padding: 4.9rem 0;
 }
 
 .py-8 {
-  padding: 64px 0;
+  padding: 5.6rem 0;
 }
 
 .py-9 {
-  padding: 72px 0;
+  padding: 6.3rem 0;
 }
 
 .p-1 {
-  padding: 8px;
+  padding: 0.7rem;
 }
 
 .p-2 {
-  padding: 16px;
+  padding: 1.4rem;
 }
 
 .p-3 {
-  padding: 24px;
+  padding: 2.1rem;
 }
 
 .p-4 {
-  padding: 32px;
+  padding: 2.8rem;
 }
 
 .p-5 {
-  padding: 40px;
+  padding: 3.5rem;
 }
 
 .p-6 {
-  padding: 48px;
+  padding: 4.2rem;
 }
 
 .p-7 {
-  padding: 56px;
+  padding: 4.9rem;
 }
 
 .p-8 {
-  padding: 64px;
+  padding: 5.6rem;
 }
 
 .p-9 {
-  padding: 72px;
+  padding: 6.3rem;
 }
 
 .w-1 {
@@ -161,6 +161,91 @@
   padding: 75%;
 }
 
+#bandeja {
+  background-image: url(assets/food2.webp);
+}
+
+#cevinacho {
+  background-image: url(assets/food1.webp);
+}
+
+#alitas {
+  background-image: url(assets/food3.webp);
+}
+
+#cevimixto {
+  background-image: url(assets/food5.webp);
+}
+
+#ceviperuano {
+  background-image: url(assets/food6.webp);
+}
+
+#aguachile {
+  background-image: url(assets/food7.webp);
+}
+
+#mojarra {
+  background-image: url(assets/food8.webp);
+}
+
+#caldomariscos {
+  background-image: url(assets/food9.webp);
+}
+
+#shuko {
+  background-image: url(assets/food10.webp);
+}
+
+#puyazo {
+  background-image: url(assets/food11.webp);
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: white;
+  border-radius: 1rem;
+}
+
+.modal-close {
+  color: black;
+  background-color: #ffe92e;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  padding: 0rem 0.8rem;
+  font-size: 24pt;
+  border-radius: 100%;
+}
+.modal-close:hover {
+  color: white;
+  padding: 0rem 0.8rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -169,14 +254,36 @@
 }
 
 body {
-  background-color: #d3d3d3;
+  background-image: url(assets/bg.jpg);
   font-family: "Open Sans", sans-serif;
   color: #ffe92e;
+  background-repeat: repeat repeat;
+  background-size: 50%;
+  padding: 2rem;
 }
 
 img {
-  max-width: 94%;
+  max-width: 100%;
   height: auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 7rem;
+}
+
+h3 {
+  font-weight: lighter;
+  font-size: 2.1rem;
 }
 
 header nav {
@@ -192,50 +299,23 @@ header nav #logo {
   width: 20%;
 }
 
-.btn-ordenar {
-  display: flex;
+@media (max-width: 400px) {
+  nav {
+    flex-direction: column;
+  }
 }
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-p {
-  font-size: 16px;
-}
-
-h2 {
-  font-weight: bolder;
-  font-size: 80px;
-}
-
-h3 {
-  font-weight: lighter;
-  font-size: 24px;
-}
-
-.container {
-  background-color: white;
-  padding: 2rem;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
-  background-image: url(assets/bg.jpg);
-  background-repeat: repeat repeat;
-  background-size: 75%;
-}
-
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 1rem;
 }
 ul li a {
   background-color: white;
   color: #585858;
-  border-radius: 50px;
-  padding: 20px 30px;
+  border-radius: 2rem;
+  padding: 1.2rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -244,8 +324,8 @@ ul li a {
 ul li a:hover {
   background-color: black;
   color: white;
-  border-radius: 50px;
-  padding: 20px 30px;
+  border-radius: 2rem;
+  padding: 1.2rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -253,25 +333,18 @@ ul li a:hover {
 }
 
 .prices .prev {
-  font-size: 32px;
+  font-size: 2.8rem;
   font-weight: bolder;
   color: #e9e9e9;
   text-decoration: line-through;
 }
 .prices .now {
-  font-size: 96px;
+  font-size: 8.4rem;
   font-weight: bolder;
 }
 
-.footlanding {
-  z-index: 2;
-}
-
-.botella {
-  position: absolute;
-  z-index: 0;
-  right: 4rem;
-  width: 11%;
+.btn-ordenar {
+  display: flex;
 }
 
 #visitanos {
@@ -290,10 +363,6 @@ iframe {
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.37);
 }
 
-.qr-waze {
-  width: 25%;
-}
-
 .footerVisitanosMobile {
   padding: 2rem;
   grid-column: 1/span 2;
@@ -301,16 +370,41 @@ iframe {
 
 .menugrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
+  gap: 1rem;
+  padding: 3rem;
 }
 
-.food {
-  width: 85%;
-  height: auto;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.507);
+@media (max-width: 400px) {
+  .menugrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .menugrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.foodcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid white;
+  backdrop-filter: blur(4px);
+  border-radius: 0.4rem;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-size: contain;
+  height: 400px;
+}
+
+.food-double {
+  grid-column: 1/span 2;
 }
 
 /*# sourceMappingURL=main.css.map */
