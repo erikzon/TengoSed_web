@@ -1,8 +1,8 @@
 .btn.btn-cta {
   background-color: #ffe92e;
   color: black;
-  border-radius: 2rem;
-  padding: 1.2rem 1.4rem;
+  border-radius: 1.8rem;
+  padding: 2vh 2.8vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -11,8 +11,8 @@
 .btn.btn-cta:hover {
   background-color: black;
   color: white;
-  border-radius: 2rem;
-  padding: 1.2rem 1.4rem;
+  border-radius: 1.8rem;
+  padding: 2vh 2.8vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -22,8 +22,8 @@
 .btn:hover {
   background-color: white;
   color: black;
-  border-radius: 2rem;
-  padding: 1.2rem 1.4rem;
+  border-radius: 1.8rem;
+  padding: 2vh 2.8vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -281,15 +281,13 @@ p {
 h2 {
   font-weight: bolder;
   font-size: 5vw;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.281);
+  line-height: 1.2;
 }
 
 h3 {
   font-weight: lighter;
   font-size: 2vw;
-}
-
-h2 {
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.281);
 }
 
 @media (min-width: 100px) and (max-width: 500px) {
@@ -361,8 +359,8 @@ ul {
 ul li a {
   background-color: white;
   color: #585858;
-  border-radius: 2rem;
-  padding: 1.2rem 1.4rem;
+  border-radius: 1.8rem;
+  padding: 2vh 2.8vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -371,8 +369,8 @@ ul li a {
 ul li a:hover {
   background-color: black;
   color: white;
-  border-radius: 2rem;
-  padding: 1.2rem 1.4rem;
+  border-radius: 1.8rem;
+  padding: 2vh 2.8vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -392,20 +390,19 @@ ul li a:hover {
     width: 80%;
   }
   nav ul li:first-child {
-    background-color: #fff;
     display: none;
   }
 }
 @media (min-width: 500px) and (max-width: 1200px) {
   nav {
-    margin-bottom: 0;
-    gap: 1rem;
+    margin-bottom: -2.5rem;
   }
   nav #logo {
-    width: 35%;
+    position: static;
+    width: 30%;
+    margin: 0;
   }
   nav ul li:first-child {
-    background-color: #fff;
     display: none;
   }
 }
@@ -489,7 +486,7 @@ iframe {
 .textoVisitanos {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .footerVisitanosMobile {
@@ -509,9 +506,16 @@ iframe {
     width: 100%;
   }
 
+  .textoVisitanos {
+    gap: 0;
+  }
+
   .footerVisitanosMobile {
     display: block;
     grid-column: 1/span 2;
+  }
+  .footerVisitanosMobile img {
+    width: 40%;
   }
 
   .QRMobile {
@@ -531,9 +535,20 @@ iframe {
     width: 100%;
   }
 
+  .textoVisitanos {
+    gap: 0;
+  }
+
   .footerVisitanosMobile {
     display: block;
     grid-column: 1/span 2;
+    gap: 2px;
+  }
+  .footerVisitanosMobile a {
+    width: 12rem;
+  }
+  .footerVisitanosMobile a img {
+    width: 28%;
   }
 }
 .menugrid {

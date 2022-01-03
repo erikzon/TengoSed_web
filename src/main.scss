@@ -47,15 +47,13 @@ p{
 h2{
     font-weight: bolder;
     font-size: 5vw;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.281);
+    line-height: 1.2;
 }
 
 h3{
     font-weight: lighter;
     font-size: 2vw;
-}
-
-h2{
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.281);
 }
 
 @media (min-width:100px) and (max-width: 500px) {   
@@ -141,7 +139,6 @@ ul {
             width: 80%;
         }
         ul li:first-child{
-            background-color: #fff;
             display: none;
         }
     }    
@@ -150,12 +147,12 @@ ul {
 @media (min-width:500px) and (max-width: 1200px) {    
     nav{
         #logo{
-            width: 35%;
+            position: static;
+            width: 30%;
+            margin: 0;
         }
-        margin-bottom: 0;
-        gap: 1rem;
+        margin-bottom: -2.5rem;
         ul li:first-child{
-            background-color: #fff;
             display: none;
         }
     } 
@@ -244,7 +241,7 @@ iframe {
 .textoVisitanos{
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1rem;
 }
 
 .footerVisitanosMobile{
@@ -263,9 +260,16 @@ iframe {
         width: 100%;
     }
 
+    .textoVisitanos{
+        gap: 0;
+    }
+
     .footerVisitanosMobile{
         display: block;
-        grid-column: 1/ span 2;
+        grid-column: 1 / span 2;
+        img{
+            width: 40%;
+        }
     }
 
     .QRMobile{
@@ -284,10 +288,20 @@ iframe {
         height: 300px;
         width: 100%;
     }
+    .textoVisitanos{
+        gap: 0;
+    }
 
     .footerVisitanosMobile{
         display: block;
-        grid-column: 1/ span 2;
+        grid-column: 1 / span 2;
+        gap: 2px;
+        a{
+            width: 12rem;
+            img{
+                width: 28%;
+            }
+        }
     }
 }
 
